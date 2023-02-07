@@ -17,8 +17,9 @@ public class Main {
         operation = masx[1];
         secondNumber = masx[2];
         Calculate result = new Calculate();
-        isAllRoman1 = result.ChekingRoman(masx[0]);
-        isALLRoman2 = result.ChekingRoman(masx[2]);
+        CheckingTheCorrectData datacheck = new CheckingTheCorrectData();
+        isAllRoman1 = datacheck.ChekingRoman(masx[0]);
+        isALLRoman2 = datacheck.ChekingRoman(masx[2]);
         CheckingTheCorrectData dataInput = new CheckingTheCorrectData();
         if (isAllRoman1 == true) {
             if (isALLRoman2 == true) {
@@ -35,7 +36,7 @@ public class Main {
             int ResultOfRomanNumbers = 0;
             ResultOfRomanNumbers = result.operationWithNumbers(FirstRomanNumber, SecondRomanNumber, masx[1], sum);
             CheckingTheCorrectData.chekTheRomanData(ResultOfRomanNumbers);
-                String ResultOfRomanCalculation = arabicToRoman.arabicToRoman(ResultOfRomanNumbers);
+                String ResultOfRomanCalculation = ArabicToRoman.arabicToRoman(ResultOfRomanNumbers);
                 System.out.println("Результат операции = " + ResultOfRomanCalculation);
             }
 

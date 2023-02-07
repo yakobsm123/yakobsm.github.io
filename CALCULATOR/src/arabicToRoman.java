@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class arabicToRoman {
+public class ArabicToRoman {
     public static String arabicToRoman(int number) {
         if ((number <= 0) || (number > 4000)) {
             throw new IllegalArgumentException(number + " is not in range (0,4000]");
